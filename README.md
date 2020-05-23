@@ -9,6 +9,7 @@ A 1x1 matrix |a| has determinant a.
 A 2x2 matrix [ [a, b], [c, d] ] or
 
 |a  b|
+
 |c  d|
 
 has determinant: a*d - b*c.
