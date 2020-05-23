@@ -37,3 +37,32 @@ Note the alternation of signs.
 
 The determinant of larger matrices are calculated analogously, e.g. if M is a 4x4 matrix with first row [a, b, c, d], then:
 det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_minor)
+
+determinant(new int[][]{{1,  2, 3, 4, 5,6, 7},
+			                  {11,12,13,14, 1,2, 8},
+			                  {10,13,14, 1, 2,3, 9},
+		                  	{9, 12, 7, 8, 3,4,10},
+			                  {8, 11 ,6, 5, 4,5,11},
+			                  {7, 10, 9, 8, 7,6,12},
+			                  {6,  5, 4, 3, 2,1,13}}));//expected：-29904
+      
+determinant(new int[][]{{9,2,3,9,9},
+                        {4,5,6,4,8},
+                        {7,8,9,1,7},
+                        {1,2,3,4,6},
+                        {1,2,3,4,5}});//expected：-72
+                        
+determinant(new int[][]{{2,5,3,41},
+                        {5,6,7,82},
+                        {4,3,2,13},
+                        {2,1,11,10}}));//expected：-5895	                        
+                        
+determinant(new int[][]{{1,1,1, 1, 1},
+                        {1,2,5, 3,41},
+                        {1,5,6, 7,82},
+                        {1,4,3, 2,13},
+                        {1,2,1,11,10}});//expected：-3553	   
+
+
+
+
